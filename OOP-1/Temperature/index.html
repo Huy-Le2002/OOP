@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         class Temperature {
+            constructor(doC) {
+                this.doC = doC;
+            }
+            setDoC(a) {
+                return this.doC = a;
+            }
+            toF() { 
+                if (this.doC >= -273) {
+                    return (this.doC*9/5) + 32; 
+                }
+                else 
+                    return alert('Nhập lại');
+            }
+            toK() {
+                if (this.doC >= -273) {
+                    return (this.doC + 273)
+                } 
+                else 
+                    return alert('Nhập lại')
+            }
+         }
+         let tem = new Temperature(60);
+         tem.toF()
+         tem.toK()
+    </script>
+</body>
+</html>
